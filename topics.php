@@ -24,7 +24,9 @@ WHERE
     category_id = " . $mysqli -> real_escape_string($_GET['id']);
 
 $result = $mysqli->query($sql);
-
+?>
+<div class="messages">
+<?php
 if (!$result) {
     echo 'The topics could not be displayed, please try again later.';
 } else {
@@ -42,13 +44,20 @@ if (!$result) {
                 <div class="msg_body">
                     <?php echo $row['body'] ?>
                 </div>
+                <div class="msg_links">
+                    <a href="reply.php?topic_id=<?php echo $row['id'] ?>"> Reply to post </a> <a href="replies.php?topic_id=<?php echo $row['id'] ?>"> Read replies </a>
+                </div>
             </div>
-
 <?php
 
         }
     }
 }
-
+?>
+</div>
+<div class="panel">
+    <a href="add_post.php?category_id=<?php echo $_GET['id'];?>">Add Post</a>
+</div>
+<?php
 include 'footer.php';
 ?>
