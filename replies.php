@@ -4,7 +4,7 @@ include 'dbconfig.php';  // Database setting and connection
 include 'header.php';   // The header for the page
 
 //Get Category id from url
-$topic_id = $_GET['id'];
+$topic_id = $_GET['topic_id'];
 
 $sql = "SELECT
     replies.id as id,
@@ -25,7 +25,7 @@ LEFT JOIN
 ON
     topics.user_id = users.id
 WHERE
-    topic_id = " . $mysqli -> real_escape_string($_GET['id']);
+    topic_id = " . $mysqli -> real_escape_string($_GET['topic_id']);
 
 $result = $mysqli->query($sql);
 ?>

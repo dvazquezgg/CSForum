@@ -14,11 +14,7 @@ else
     {
         /*the form hasn't been posted yet, display it
           note that the action="" will cause the form to post to the same page it is on */
-        echo '<form method="post" action="">
-			<label for="username">Username:</label> <input type="text" id="username" name="username" />
-			<label for="userpass">Password:</label> <input type="password" id="userpass" name="userpass">
-			<input type="submit" value="Sign in" />
-		 </form>';
+        include 'login_form.php';
     }
     else
     {
@@ -48,6 +44,8 @@ else
                 echo '<li>' . $value . '</li>'; /* this generates a nice error list */
             }
             echo '</ul>';
+            include 'login_form.php';
+
         }
         else
         {

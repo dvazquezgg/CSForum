@@ -1,0 +1,125 @@
+
+body {
+    font-family: "Gill Sans MT";
+    font-size: medium;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px; /*check*/
+    border-color: gold;
+}
+.header{
+    width: 100%;
+    height: 64px; /* set the height for the header */
+    display: block;
+}
+.wrapper{
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: red;
+}
+.footer {
+    width: 100%;
+    height: 64px; /* set the height for the footer */
+    border: solid;
+    border-color: black;
+}
+
+#sitetitle{
+    float: left;
+    width: 50%;
+}
+
+#logo{
+    float: right;
+    width: 20%;
+}
+
+
+
+.userbar{
+    height: 50px;
+    width: 100%;
+    border: solid;
+    border-color: blueviolet;
+}
+
+.content {
+    width: 100%;
+    border: solid;
+    border-color: cyan;
+    display: block;
+    float: left;
+}
+
+.category_list {
+    border: solid;
+    border-color: greenyellow;
+}
+
+.entryForm {
+    border: solid;
+    border-color: sandybrown;
+}
+
+.panel {
+    border: solid;
+    border-color: blue;
+}
+/* MESSAGE FORMATTING */
+.messages{
+    border: solid;
+    border-color: deeppink;
+    display: block;
+    float: left;
+    width: 100%
+
+}
+.message {
+    border: solid;
+    border-color: coral;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.msg_head {
+    margin: 5px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.msg_title {
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+}
+.msg_author {
+    width: 30%;
+    float: left;
+}
+.msg_date {
+    width: 30%;
+    float:left;
+}
+.msg_body {
+    margin: 10px;
+    float: left;
+    width: 100%;
+}
+
+.msg_links{
+    margin: 5px;
+}
+.msg_links a{
+    margin: 10px;
+}
+

@@ -6,11 +6,15 @@
     <meta name="description" content="Computer Sceinec topics forum" />
     <meta name="keywords" content="Computers, programmming, Technology" />
     <title>Computer Science forum</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<h1>Computer Science Exchange</h1>
-<div id="wrapper">
+<div class="container">
+<div class="header">
+    <h1 id="sitetitle">Computer Science Exchange</h1>
+    <a id="logo" href="index.php"> <img alt="Home_Logo" src="images/logo.png" /> </a>
+</div>
+<div class="wrapper">
 
     <div class="userbar">
         <?php
