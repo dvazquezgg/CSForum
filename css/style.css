@@ -17,7 +17,7 @@ body {
     display: block;
 }
 .wrapper{
-    flex-grow: 1;
+    flex-flow: wrap;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -41,8 +41,6 @@ body {
     float: right;
     width: 20%;
 }
-
-
 
 .userbar{
     height: 50px;
