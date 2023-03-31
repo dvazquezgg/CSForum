@@ -56,7 +56,7 @@ if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
     }
 
 } else {
-    echo 'You must signed-in to post, please enter the site here <a href="login.php">sign in</a>.';
+    echo '<div><h4>You must signed-in to post, please enter the site here <a href="login.php">sign in</a>.</h4></div>';
 }
 
 ?>

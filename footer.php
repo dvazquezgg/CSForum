@@ -1,7 +1,7 @@
 </div><!-- content -->
 </div><!-- wrapper -->
 <div id="footer" class="footer">
-    <h3>Created by Daniel Vazquez</h3>
+    <h6>Computer Science Forum</h6>
 </div>
 </div><!-- container -->
 </body>

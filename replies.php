@@ -42,8 +42,8 @@ $result = $mysqli->query($sql);
                 <div class="message">
                     <div class="msg_head">
                         <div class="msg_title"><?php echo $row['title'] ?></div>
-                        <div class="msg_author"><?php echo $row['username'] ?></div>
-                        <div class="msg_date"><?php echo $row['create_date'] ?></div>
+                        <div class="msg_author"><label>Author:</label><?php echo $row['username'] ?></div>
+                        <div class="msg_date"><label>Date:</label><?php echo $row['create_date'] ?></div>
                     </div>
                     <div class="msg_body">
                         <?php echo $row['body'] ?>

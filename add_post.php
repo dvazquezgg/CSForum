@@ -52,18 +52,18 @@ if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
             // echo $sql;
             if (!$mysqli -> query($sql)) {
                 //something went wrong, display the error
-                echo 'Something went wrong while posting. Please try again later.';
+                echo '<div><h4>Something went wrong while posting. Please try again later.</h4></div>';
                 //echo mysql_error(); //debugging purposes, uncomment when needed
             }
             else {
-                echo 'Successfully posted to the site.';
+                echo '<div><h4>Successfully posted to the site.</h4></div>';
             }
         }
 
     }
 
 } else {
-    echo 'You are already signed in, you can <a href="signout.php">sign out</a> if you want.';
+    echo '<div><h4>You are already signed in, you can <a href="signout.php">sign out</a> if you want.</h4></div>';
 }
 
 
